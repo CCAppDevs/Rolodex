@@ -21,5 +21,9 @@ public:
 
 	// methods of a person (the stuff it can do)
 	std::string ToString();
+
+	// getters and setters
+	unsigned int GetAge();
+	void SetAge(unsigned int newAge);
 };
 

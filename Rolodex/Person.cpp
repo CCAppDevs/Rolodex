@@ -28,3 +28,20 @@ std::string Person::ToString()
 		" Phone: " +
 		this->Phone;
 }
+
+unsigned int Person::GetAge()
+{
+	return this->Age;
+}
+
+void Person::SetAge(unsigned int newAge)
+{
+	if (newAge < 0) {
+		newAge = 0;
+	}
+	else if (newAge > 150) {
+		newAge = 150;
+	}
+
+	this->Age = newAge;
+}
